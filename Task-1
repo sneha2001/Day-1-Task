@@ -1,3 +1,4 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
 HTTP/1.1
 
 HTTP/1.1 relies on a single connection per request/response, which can result in a slower loading time for web pages with multiple resources.
@@ -60,5 +61,7 @@ With the introduction of multiplexing, HTTP/2 minimizes the need for multiple co
 Security:
 
 While not a direct security enhancement, HTTP/2 is often used with HTTPS, providing a more secure communication channel compared to the plain text nature of HTTP/1.1.
+
+Write a blog about objects and its internal representation in Javascript.
 
 
