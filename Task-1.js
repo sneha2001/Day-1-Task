@@ -80,6 +80,54 @@ const person = {
     console.log(`Hello, my name is ${this.name}`);
   }
 };
+3. Hash Tables and Properties
+Internally, objects are often implemented using hash tables for efficient key-value pair lookups.
+Each property is associated with a unique hash, facilitating quick access.
+Simplified representation:
+const person = {
+  name: 'John Doe',
+  age: 25,
+  isStudent: true,
+  sayHello: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+  // Hashes for efficient property lookup
+  // 'name': hash('name'),
+  // 'age': hash('age'),
+  // 'isStudent': hash('isStudent'),
+  // 'sayHello': hash('sayHello'),
+};
+4. Prototypes and Inheritance
+Objects can be linked through prototypes, forming a prototype chain.
+Allows for property lookup in the chain if not found in the object itself.
+Facilitates inheritance, a powerful feature in object-oriented programming.
+Example:
+const personPrototype = {
+  greet: function() {
+    console.log('Greetings!');
+  }
+};
+
+const person = Object.create(personPrototype);
+
+person.name = 'John Doe';
+person.age = 25;
+
+console.log(person.name); // Output: John Doe
+person.greet(); // Output: Greetings!
+5. The 'this' Keyword and Execution Context
+The this keyword refers to the current execution context.
+In object methods, this points to the object, enabling access to its properties.
+Example:
+const person = {
+  name: 'John Doe',
+  age: 25,
+  introduce: function() {
+    console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+  }
+};
+
+person.introduce(); // Output: Hi, I'm John Doe and I'm 25 years old.
 
 
 
