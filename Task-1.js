@@ -1,4 +1,4 @@
-Write a blog on Difference between HTTP1.1 vs HTTP2
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
 HTTP/1.1
 
 HTTP/1.1 relies on a single connection per request/response, which can result in a slower loading time for web pages with multiple resources.
@@ -62,6 +62,24 @@ Security:
 
 While not a direct security enhancement, HTTP/2 is often used with HTTPS, providing a more secure communication channel compared to the plain text nature of HTTP/1.1.
 
-Write a blog about objects and its internal representation in Javascript.
+2. Write a blog about objects and its internal representation in Javascript.
+JavaScript, being a versatile language, relies heavily on objects to handle data efficiently. 
+Let's explore the internal representation of objects in JavaScript through key points.
+
+1. Object Essentials
+* Objects are composite data types, capable of storing and organizing multiple values and functions.
+* They are collections of key-value pairs, where keys (properties) can be strings or symbols, and values can be of any data type.
+2. Creating Objects
+* Objects can be created using object literals or through the Object constructor.
+Example:
+const person = {
+  name: 'John Doe',
+  age: 25,
+  isStudent: true,
+  sayHello: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+
 
 
